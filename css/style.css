@@ -140,12 +140,6 @@ header {
     var(--gradientColorZero);
 }
 
-@media only screen and (max-width: 600px) {
-  .navcol-2 {
-    display: none;
-  }
-}
-
 .main-hero {
   position: relative;
   display: grid;
@@ -237,6 +231,87 @@ header {
   width: 108%;
   right: 20px;
   top: 25px;
+}
+
+/* Arrow box dropdown*/
+
+.discover{
+  color: white;
+  padding: 0 20px;
+  font-weight: bold;
+  font-size: 17px;
+  letter-spacing: 3;
+  letter-spacing: 0.6px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown a {
+  padding: 1em 2em 1em 1em;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  color: white;
+  /* padding: 1rem; */
+  margin: 0;
+}
+
+.dropdown-content {
+  border-radius: 20px!important;
+  padding: 0.6rem;
+  margin-top: 15px;
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  border-radius: 2%;
+}
+
+.dropdown-content:after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: 23%;
+  margin-left: -15px;
+  margin-top: -10px;
+  width: 0;
+  z-index: 1;
+  height: 0;
+  border-bottom: solid 15px #fff;
+  border-left: solid 15px transparent;
+  border-right: solid 15px transparent;
+}
+
+.arrow-box {
+  background-color: white;
+  width: 12rem;
+  /* border-radius: 10px; */
+}
+
+.sec {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+}
+
+.sec p a {
+  color: black;
+  padding: 0 !important;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.sec p {
+  text-transform: capitalize;
+}
+
+.sec img {
+  width: 36px;
 }
 
 /* Brand images section */
@@ -504,6 +579,14 @@ header {
   margin-left: 10px;
 }
 
+.set-email{
+  display: flex;
+}
+
+.set-email p {
+  margin-left: 8px;
+}
+
 .address {
   display: flex;
 }
@@ -517,18 +600,18 @@ header {
   margin-bottom: 20px;
 }
 
-.fa-heart{
+.fa-heart {
   color: red;
 }
 
-.fa-facebook-f:hover{
-  color: #4267B2;
+.fa-facebook-f:hover {
+  color: #4267b2;
 }
 
-.fa-instagram:hover{
+.fa-instagram:hover {
   color: red;
 }
 
-.fa-twitter:hover{
+.fa-twitter:hover {
   color: #00acee;
 }
