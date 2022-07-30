@@ -10,6 +10,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mobile.css">
     <title>Simulated Virtual Solutions</title>
 </head>
 
@@ -25,10 +26,24 @@
         <!-- Main menu -->
         <div class="navcol-2">
             <ul>
-                <li><a href="#">Services</a></li>
+                <div class="dropdown">
+                    <a class="discover" href="#">Discover</a>
+                    <div class="dropdown-content">
+                        <div class="arrow-box">
+                            <div class="sec">
+                                <img src="images/monitoring.png" alt="monitoring">
+                                <p><a href="./pages/services.html" target="_blank">our services</a></p>
+                            </div>
+                            <div class="sec">
+                                <img src="images/search.png" alt="search">
+                                <p><a href="#" target="_blank">about us</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <li><a href="#">Designs</a></li>
                 <li><a href="#">Developers</a></li>
-                <li><a href="#">Pricing</a></li>
+                <li><a href="./pages/pricing.html" target="_blank">Pricing</a></li>
             </ul>
         </div>
     </header>
@@ -104,7 +119,7 @@
     </div>
 
     <!-- video - 2 -->
-    <div class="vid-text-grid">
+    <div class="vid-text-grid for-mobile-flex">
         <div class="vid-desc block-center">
             <h2>bed room design</h2>
             <p>
@@ -135,7 +150,7 @@
     </div>
 
     <!-- video - 4 -->
-    <div class="vid-text-grid">
+    <div class="vid-text-grid for-mobile-flex">
         <div class="vid-desc block-center">
             <h2>dining design</h2>
             <p>
@@ -179,10 +194,10 @@
                                 <a href="tel:+919059248577">+91 90592 48577</a>,<a href="tel:+919347735366">+91 93477
                                     35366</a></span>
                         </i></li>
-                    <li><i class="fa-solid fa-envelope"></i>
-                        <a href="mailto:simulatedvirtualsolutions@gmail.com">
-                            simulatedvirtualsolutions@gmail.com
-                        </a>
+                    <li class="set-email"><i class="fa-solid fa-envelope"></i>
+                        <p><a href="mailto:simulatedvirtualsolutions@gmail.com">
+                                simulatedvirtualsolutions@gmail.com
+                            </a></p>
 
                     </li>
                     <li class="address"><i class="fa-solid fa-location-dot"></i>
@@ -239,6 +254,6 @@
     </div>
 </body>
 <script src="js/animate.js"></script>
-
+<!-- <script src="js/app.js"></script> -->
 
 </html>
