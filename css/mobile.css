@@ -3,8 +3,12 @@
     display: none;
   } */
 
+  .mobile-hamburger{
+    display: block;
+  }
+
   .navcol-1 img {
-    width: 330px;
+    width: 315px;
     margin-right: 0;
   }
 
