@@ -43,6 +43,133 @@
   overflow-x: hidden;
 } */
 
+/* mobile navbar */
+
+.mobile-hamburger{
+  display: none;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  /* background-color: rgb(0, 0, 0); */
+  background-color: rgba(255, 255, 255, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 14%;
+  width: 100%;
+  /* text-align: center; */
+  /* margin-top: 30px;*/
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 1.9rem;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  padding-left: 30px;
+}
+
+/* .overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+} */
+
+.overlay .closebtn {
+  position: absolute;
+  top: -15px;
+  right: -3px;
+  font-size: 60px;
+  font-weight: 300;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+/* collapsible click */
+
+.collapsible {
+  /* background-color: #eee; */
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.collapsible:after {
+  content: "\002B";
+  color: #777;
+  font-weight: 400;
+  float: right;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.mobile-discover {
+  list-style: none;
+  margin-left: 30px;
+}
+
+.mobile-discover li {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.mobile-discover li p {
+  margin-left: 20px;
+}
+
+.mobile-discover li p a {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.mobile-discover li img {
+  width: 38px;
+}
+
+/* .active {
+  background-color: #ccc;
+} */
+
+.panel {
+  padding: 0 18px;
+  /* background-color: white; */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+/* mobile nav end */
+
 /* Navbar */
 
 header {
@@ -235,7 +362,7 @@ header {
 
 /* Arrow box dropdown*/
 
-.discover{
+.discover {
   color: white;
   padding: 0 20px;
   font-weight: bold;
@@ -259,7 +386,7 @@ header {
 }
 
 .dropdown-content {
-  border-radius: 20px!important;
+  border-radius: 20px !important;
   padding: 0.6rem;
   margin-top: 15px;
   display: none;
@@ -579,7 +706,7 @@ header {
   margin-left: 10px;
 }
 
-.set-email{
+.set-email {
   display: flex;
 }
 
