@@ -116,6 +116,14 @@
 
   /* footer */
 
+  .mail-small{
+    display: block;
+  }
+  
+  .mail-big{
+    display: none;
+  }
+
   .col-1 {
     margin: 20px 0;
   }
