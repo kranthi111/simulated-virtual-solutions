@@ -5,15 +5,87 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/fa9530214e.js" crossorigin="anonymous"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../css/services.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/mobile.css">
+    <style>
+        header {
+            background: #40E0D0;
+            background: -webkit-linear-gradient(to right, #FF0080, #FF8C00, #40E0D0);
+            background: linear-gradient(to right, #FF0080, #FF8C00, #40E0D0);
+            margin-top: 0 !important;
+        }
+    </style>
     <title>Services</title>
 </head>
 
 <body>
+    <!-- Navbar -->
+
+    <header>
+        <!-- Logo image -->
+        <div class="navcol-1">
+            <a href="https://www.simulatedvirtualsolutions.com/" class="main-logo-link"><img
+                    src="../images/main-logo-final.png" alt="svs main logo" /></a>
+        </div>
+        <!-- Main menu -->
+        <div class="navcol-2">
+            <ul>
+                <div class="dropdown">
+                    <a class="discover" href="#">Discover</a>
+                    <div class="dropdown-content">
+                        <div class="arrow-box">
+                            <div class="sec">
+                                <img src="../images/monitoring.png" alt="monitoring">
+                                <p><a href="./services.html" target="_blank">our services</a></p>
+                            </div>
+                            <div class="sec">
+                                <img src="../images/search.png" alt="search">
+                                <p><a href="#" target="_blank">about us</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <li><a href="#">Designs</a></li>
+                <li><a href="#">Developers</a></li>
+                <li><a href="./pricing.html" target="_blank">Pricing</a></li>
+            </ul>
+        </div>
+        <div class="mobile-hamburger">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+
+    <div id="mobile-nav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a class="collapsible" href="#">Discover</a>
+            <div class="panel">
+                <ul class="mobile-discover">
+                    <li>
+                        <img src="../images/monitoring.png" alt="monitoring">
+                        <p><a href="./services.html">our services</a></p>
+                    </li>
+                    <li>
+                        <img src="../images/search.png" alt="search">
+                        <p><a href="#" target="_blank">about us</a></p>
+                    </li>
+                </ul>
+            </div>
+            <a href="#">Designs</a>
+            <a href="#">Developers</a>
+            <a href="./pricing.html">Pricing</a>
+        </div>
+    </div>
+
+
     <h1 class="hero-heading">Services we provide</h1>
     <div class="box">
         <div class="hero-img-text">
@@ -37,6 +109,21 @@
                 </div>
                 <div class="swiper-slide">
                     <img src="../images/img-4.jpg" alt="img-4">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../images/img-5.jpg" alt="img-5">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../images/img-6.jpg" alt="img-6">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../images/img-7.jpg" alt="img-7">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../images/img-8.jpg" alt="img-8">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../images/img-9.jpg" alt="img-9">
                 </div>
             </div>
             <div class="swiper-button-next"></div>
@@ -78,6 +165,99 @@
             </iframe>
         </div>
     </div>
+
+    <!-- footer -->
+
+    <!-- footer -->
+    <div class="footer-section">
+        <div class="foot-grid">
+            <div class="col-1 align-center">
+                <h3>our products</h3>
+                <ul>
+                    <li><a href="#">Rendered Pictures</a></li>
+                    <li><a href="#">3D Walkthroughs</a></li>
+                    <li><a href="#">Virtual Model</a></li>
+                    <li><a href="#">Real time customization</a></li>
+                </ul>
+            </div>
+            <div class="col-1 align-center">
+                <h3>useful links</h3>
+                <ul>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Designs</a></li>
+                    <li><a href="#">Developers</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+            </div>
+            <div class="col-1 align-center">
+                <h3>contact info</h3>
+                <ul>
+                    <li><i class="fa-solid fa-mobile-screen">
+                            <span class="phone-numbers">
+                                <a href="tel:+919059248577">+91 90592 48577</a>,<a href="tel:+919347735366">+91 93477
+                                    35366</a></span>
+                        </i></li>
+                    <li class="set-email"><i class="fa-solid fa-envelope"></i>
+                        <p><a href="mailto:simulatedvirtualsolutions@gmail.com">
+                                simulatedvirtualsolutions<span class="mail-big">@gmail.com</span>
+                                <span class="mail-small"> @gmail.com</span>
+                            </a>
+                        </p>
+
+                    </li>
+                    <li class="address"><i class="fa-solid fa-location-dot"></i>
+                        <p>VRSEC IT Department Kanuru ,Vijayawada 520007</p>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright-social">
+        <div class="grid-copy-wrap">
+            <div class="company-logo align-center">
+                <img src="../images/logo.png" alt="company-logo">
+            </div>
+            <div class="copy-right align-center">
+                <p>© 2022 simulatedvirtualsolutions.com</p>
+            </div>
+            <div class="social-links align-center">
+                <a href="https://www.facebook.com/Simulated-virtual-solutions-private-limited-100229749364476"
+                    class="facebook-link" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/svs_pvt.ltd/" class="instagram" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com/SVS_PvtLtd" class="twitter" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- endcredits -->
+
+    <div class="footer-line">
+        <p class="footer-tag">Made with <i class="fa-solid fa-heart fa-beat"></i></p>
+        <!-- <span class="love-img"> <img src="images/love.png" alt="love-with-arrow">
+            </span> -->
+        <p> in </p>
+        <span class="india-img"><img src="../images/india.png" alt="india-flag"></span>
+    </div>
+
+    <div class="whatsapp-contact">
+        <a href="https://wa.me/919059248577" target="_blank"><img src="../images/whatsapp.svg" alt="whatsapp icon"
+                align="right"></a>
+    </div>
+
+    <!-- Branding -->
+    <div class="branding-background">
+        <img src="../images/gradient-logo.gif" alt="gradient-logo">
+        <h1 class="branding">simulated virtual solutions</h1>
+    </div>
+
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>
 <script>
@@ -112,5 +292,6 @@
         },
     });
 </script>
+<script src="../js/app.js"></script>
 
 </html>
