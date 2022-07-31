@@ -11,10 +11,78 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png" />
     <link rel="stylesheet" href="../css/pricing.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/mobile.css">
+    <style>
+        header {
+            background: #999999;
+            margin-top: 0 !important;
+        }
+    </style>
     <title>Pricing</title>
 </head>
 
 <body>
+    <!-- Navbar -->
+
+    <header>
+        <!-- Logo image -->
+        <div class="navcol-1">
+            <a href="https://www.simulatedvirtualsolutions.com/" class="main-logo-link"><img
+                    src="../images/main-logo-final.png" alt="svs main logo" /></a>
+        </div>
+        <!-- Main menu -->
+        <div class="navcol-2">
+            <ul>
+                <div class="dropdown">
+                    <a class="discover" href="#">Discover</a>
+                    <div class="dropdown-content">
+                        <div class="arrow-box">
+                            <div class="sec">
+                                <img src="../images/monitoring.png" alt="monitoring">
+                                <p><a href="./services.html" target="_blank">our services</a></p>
+                            </div>
+                            <div class="sec">
+                                <img src="../images/search.png" alt="search">
+                                <p><a href="#" target="_blank">about us</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <li><a href="#">Designs</a></li>
+                <li><a href="#">Developers</a></li>
+                <li><a href="./pricing.html" target="_blank">Pricing</a></li>
+            </ul>
+        </div>
+        <div class="mobile-hamburger">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+
+    <div id="mobile-nav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a class="collapsible" href="#">Discover</a>
+            <div class="panel">
+                <ul class="mobile-discover">
+                    <li>
+                        <img src="../images/monitoring.png" alt="monitoring">
+                        <p><a href="./services.html">our services</a></p>
+                    </li>
+                    <li>
+                        <img src="../images/search.png" alt="search">
+                        <p><a href="#" target="_blank">about us</a></p>
+                    </li>
+                </ul>
+            </div>
+            <a href="#">Designs</a>
+            <a href="#">Developers</a>
+            <a href="./pricing.html">Pricing</a>
+        </div>
+    </div>
+
+
     <section class="contianer">
         <h1 class="text-heading">pricing</h1>
         <div class="sub-text">
@@ -60,59 +128,7 @@
         <img src="../images/logo.jpeg" alt="picture" class="image">
 
     </section>
-    <!-- <div class="cash-part">
-        <div class="part-main">
-            <div class="main">
-                <div class="part-1">
-                    <div class="text-11">
-                        <h3 class="sub-1">Pay as you go</h3>
-                        <div class="price-tag">
-                            <div class="price-1">
-                                <div class="tag">
-                                    <p>20%</p>
-                                </div>
-                                <div class="text-tag">
-                                    <p>Before-Hand</p>
-                                </div>
-                            </div>
-                            <div class="price-1">
-                                <div class="tag">
-                                    <p>40%</p>
-                                </div>
-                                <div class="text-tag-0">
-                                    <p>Before Modification</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="part-2">
-                    <div class="page-c">
-                        <div class="text-11">
-                            <div class="price-tag">
-                                <div class="price-1">
-                                    <div class="tag-img">
-                                        <img src="Images/customer-service.png" alt="">
-                                    </div>
-                                    <div class="text-tag">
-                                        <p>24/7 Customer Support</p>
-                                    </div>
-                                </div>
-                                <div class="price-1">
-                                    <div class="tag-img">
-                                        <img src="Images/price-tag.png" alt="">
-                                    </div>
-                                    <div class="text-tag">
-                                        <p>24/7 Customer Support</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
+
     <!-- payment info -->
     <div class="payment-wrap">
         <div class="payment-info">
@@ -230,5 +246,6 @@
         <h1 class="branding">simulated virtual solutions</h1>
     </div>
 </body>
+<script src="../js/app.js"></script>
 
 </html>
