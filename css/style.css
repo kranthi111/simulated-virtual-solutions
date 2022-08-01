@@ -45,7 +45,7 @@
 
 /* mobile navbar */
 
-.mobile-hamburger{
+.mobile-hamburger {
   display: none;
 }
 
@@ -211,7 +211,7 @@ header {
 .navcol-2 li a {
   text-decoration: none;
   color: white;
-  padding: 0 20px;
+  padding: 0 2rem;
   font-weight: bold;
   font-size: 17px;
   letter-spacing: 3;
@@ -377,15 +377,24 @@ header {
   transition: all 3s ease-in;
 }
 
+.discover {
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  color: white;
+  margin: 0;
+}
+/* 
 .dropdown a {
   padding: 1em 2em 1em 1em;
   text-decoration: none;
   border: none;
   outline: none;
   color: white;
-  /* padding: 1rem; */
+  padding: 1rem;
   margin: 0;
-}
+} */
 
 .dropdown-content {
   border-radius: 20px !important;
@@ -417,30 +426,34 @@ header {
 
 .arrow-box {
   background-color: white;
-  width: 12rem;
+  /* width: 12rem; */
   /* border-radius: 10px; */
+  padding: 0.2rem;
 }
 
 .sec {
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   align-items: center;
-  padding: 5px;
-}
-
-.sec p a {
-  color: black;
-  padding: 0 !important;
-  font-size: 16px;
+  padding: 10px;
   text-decoration: none;
 }
 
+/* .sec li {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+} */
+
 .sec p {
+  color: black;
   text-transform: capitalize;
+  margin-left: 16px;
 }
 
 .sec img {
-  width: 36px;
+  width: 30px;
 }
 
 /* Brand images section */
@@ -601,7 +614,7 @@ header {
 
 /* footer */
 
-.mail-small{
+.mail-small {
   display: none;
 }
 
@@ -714,9 +727,7 @@ header {
 
 .set-email {
   display: flex;
-  
 }
-
 
 .set-email p {
   margin-left: 8px;
