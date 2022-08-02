@@ -90,7 +90,7 @@
     </div>
 
 
-    <h1 class="hero-heading">Services we provide</h1>
+    <h1 id="services" class="hero-heading">Services we provide</h1>
     <div class="box">
         <div class="hero-img-text">
             <img src="../images/picture.png" alt="picture">
@@ -135,7 +135,7 @@
             <div class="swiper-pagination"></div>
         </div>
     </div>
-    <div class="box">
+    <div id="3d-walkthroughs" class="box">
         <div class="hero-img-text">
             <img src="../images/video.png" alt="video">
             <h1 class="sub-heading">3d walkthroughs</h1>
@@ -145,14 +145,33 @@
             <p>The final delivered product can be uploaded in youtube and shared with clients.</p>
         </div>
         <div class="yt-video">
-            <iframe class="yt-video-align" src="https://www.youtube.com/embed/G-EeNNJTaME" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
+            <div class="swiper mySwiper3">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <iframe class="yt-video-align" src="https://www.youtube.com/embed/G-EeNNJTaME"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="swiper-slide">
+                        <iframe class="yt-video-align" src="https://www.youtube.com/embed/zOQbJk2yV3o"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="box">
+
+    </div>
+    </div>
+    <div id="virtual-models" class="box">
         <div class="hero-img-text">
             <img src="../images/virtual-glasses.png" alt="virtual-glasses">
             <h1 class="sub-heading">virtual models</h1>
@@ -161,15 +180,34 @@
             <p>realtime interactive model with realistic objects placed inside your dream house.webview will be provided
                 for ease of communication</p>
         </div>
-        <div class="yt-video">
-            <iframe class="yt-video-align" src="https://www.youtube.com/embed/S19UcWdOA-I" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
+        <div class="virtual-model-website">
+            <div class="swiper mySwiper2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="../images/virtual-model-1.jpg" alt="vm-1">
+                        <div class="redirect">
+                            <a href="https://api2.enscape3d.com/v1/view/c3ad222b-26bc-404f-acaa-c63b36c1bea6"
+                                target="_blank">visualize
+                                the model</a>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../images/virtual-model-2.jpg" alt="vm-2">
+                        <div class="redirect">
+                            <a href="https://api2.enscape3d.com/v1/view/0f0ee57e-41bd-4188-a9b1-4d977615bd9c"
+                                target="_blank">visualize
+                                the model</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
         </div>
     </div>
-
     <!-- footer -->
 
     <!-- footer -->
@@ -198,7 +236,8 @@
                 <ul>
                     <li><i class="fa-solid fa-mobile-screen">
                             <span class="phone-numbers">
-                                <a href="tel:+919059248577">+91 90592 48577</a>,<a href="tel:+919347735366">+91 93477
+                                <a href="tel:+919059248577">+91 90592 48577</a>,<a href="tel:+919347735366">+91
+                                    93477
                                     35366</a></span>
                         </i></li>
                     <li class="set-email"><i class="fa-solid fa-envelope"></i>
@@ -269,13 +308,21 @@
         grabCursor: true,
         paginationClickable: true,
         effect: "creative",
+        // autoplay: false,
         autoplay: {
             delay: 3000,
             disableOnInteraction: false,
         },
+        // pagination: {
+        //     el: ".swiper-pagination",
+        //     dynamicBullets: true
+        // },
         pagination: {
             el: ".swiper-pagination",
-            dynamicBullets: true
+            clickable: true,
+            renderBullet: function (index, className) {
+                return '<span class="' + className + '">' + (index + 1) + "</span>";
+            },
         },
         navigation: {
             nextEl: ".swiper-button-next",
@@ -295,6 +342,71 @@
             },
         },
     });
+
+    var swiper5 = new Swiper(".mySwiper3", {
+        grabCursor: true,
+        paginationClickable: true,
+        effect: "creative",
+        loop: false,
+        autoplay: false,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            renderBullet: function (index, className) {
+                return '<span class="' + className + '">' + (index + 1) + "</span>";
+            },
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        creativeEffect: {
+            prev: {
+                // shadow: true,
+                translate: [0, 0, -800],
+                rotate: [180, 0, 0],
+            },
+            next: {
+                // shadow: true,
+                translate: [0, 0, -800],
+                rotate: [-180, 0, 0],
+            },
+        },
+    });
+
+    var swiper6 = new Swiper(".mySwiper2", {
+        grabCursor: true,
+        paginationClickable: true,
+        effect: "creative",
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            renderBullet: function (index, className) {
+                return '<span class="' + className + '">' + (index + 1) + "</span>";
+            },
+        },
+        // autoplay: false,
+        autoplay: false,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        loop: false,
+        creativeEffect: {
+            prev: {
+                shadow: true,
+                translate: ["-125%", 0, -800],
+                rotate: [0, 0, -90],
+            },
+            next: {
+                shadow: true,
+                translate: ["125%", 0, -800],
+                rotate: [0, 0, 90],
+            },
+        },
+    });
+
+</script>
 </script>
 <script src="../js/app.js"></script>
 
