@@ -3,7 +3,7 @@
     display: none;
   } */
 
-  .mobile-hamburger{
+  .mobile-hamburger {
     display: block;
   }
 
@@ -116,11 +116,25 @@
 
   /* footer */
 
-  .mail-small{
+  .mobile-view-flex {
+    display: flex;
+  }
+
+  .big-screen-view{
+    display: none;
+  }
+
+  .mobile-view {
+    display: flex;
+    flex-direction: column;
+    margin-top: -4px;
+  }
+
+  .mail-small {
     display: block;
   }
-  
-  .mail-big{
+
+  .mail-big {
     display: none;
   }
 
