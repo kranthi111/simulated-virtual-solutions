@@ -189,21 +189,9 @@ body {
 
 /* image section */
 
-.image-section {
-  display: flex;
-  width: calc(100% - 100px);
-}
-
 .image-section img {
+  width: calc(100% - 100px);
   height: 500px;
-}
-
-.image-section .apple {
-  width: 300px;
-}
-
-.image-section .bed {
-  width: calc(80% - 69px);
 }
 
 /* our features */
