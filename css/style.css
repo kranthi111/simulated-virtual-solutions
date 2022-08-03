@@ -16,6 +16,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
   /* font-family: 'Baloo Bhai 2', cursive; */
 }
 
@@ -428,6 +429,22 @@ header {
   padding: 0.2rem;
 }
 
+/* hover effect */
+
+.arrow-box a {
+  border-radius: 10px;
+}
+
+.arrow-box a:hover {
+  background: #f7ff00;
+  background: -webkit-linear-gradient(to left, #db36a4, #f7ff00);
+  background: linear-gradient(to left, #db36a4, #f7ff00);
+}
+
+.arrow-box a:hover p {
+  color: white;
+}
+
 .sec {
   display: flex;
   /* justify-content: space-around; */
@@ -720,6 +737,10 @@ header {
 .phone-numbers {
   font-weight: 500;
   margin-left: 10px;
+}
+
+.mobile-view {
+  display: none;
 }
 
 .set-email {
