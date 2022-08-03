@@ -262,3 +262,105 @@ body {
 .grid-section .feature-card img {
   width: 100px;
 }
+
+/* responsiveness */
+
+@media only screen and (max-width: 450px) {
+  .intro {
+    grid-template-columns: 1fr;
+  }
+
+  .who-are-we {
+    grid-template-columns: 1fr;
+    width: calc(100% - 30px);
+  }
+
+  .description h1 {
+    text-align: center;
+  }
+
+  .team-discussing img {
+    width: 90%;
+  }
+
+  .description {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .image-section img {
+    width: calc(100% - 30px);
+    height: 100%;
+  }
+
+  .what-we-do {
+    grid-template-columns: 1fr;
+    width: calc(100% - 30px);
+  }
+
+  .what-we-do .context h1 {
+    text-align: center;
+  }
+
+  .what-we-do .context {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .what-we-do .about-us {
+    height: 140px;
+  }
+
+  .what-we-do .about-us h1 {
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .our-niche {
+    grid-template-columns: 1fr;
+    width: calc(100% - 30px);
+  }
+
+  .our-niche .niche-context {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .our-niche .niche-context h1 {
+    text-align: center;
+  }
+
+  .grid-section {
+    grid-template-columns: 1fr;
+    width: calc(100% - 30px);
+  }
+
+  .our-features {
+    width: calc(100% - 30px);
+  }
+
+  .our-features .set-apart {
+    flex-direction: column;
+  }
+
+  .features-grid {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+  }
+  .our-features .set-apart h1 {
+    margin-left: 0;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .grid-section .feature-card {
+    margin: 20px auto;
+  }
+
+  .grid-section {
+    margin: 20px auto;
+  }
+}
