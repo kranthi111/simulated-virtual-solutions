@@ -20,6 +20,14 @@
   bottom: 0;
 }
 
+.team-heading .developer-illustration {
+  position: absolute;
+  width: 350px;
+  left: 0px;
+  bottom: 0;
+  top: -80%;
+}
+
 .team-heading .meet {
   color: rgba(67, 9, 203, 0.1);
   font-size: 7rem;
@@ -274,6 +282,10 @@
 /* responsiveness */
 
 @media only screen and (max-width: 600px) {
+  .developer-illustration {
+    display: none;
+  }
+
   .grid {
     grid-template-columns: 1fr;
     padding: 0px 1rem;
