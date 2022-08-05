@@ -70,6 +70,10 @@
   transition: 0.5s margin-right ease-in-out;
 }
 
+.box:hover .rizwan-intro {
+  margin-right: 370px;
+}
+
 .box:hover .right-txt {
   opacity: 1;
   margin-left: 370px;
@@ -139,6 +143,9 @@
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+.mahith-intro {
+  width: 200px;
+}
 .kalpana-intro,
 .kranthi-intro {
   width: 225px;
@@ -209,7 +216,7 @@
   color: #a62100;
 }
 
-.linktree a img{
+.linktree a img {
   width: 17px;
 }
 
