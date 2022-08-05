@@ -205,6 +205,14 @@
   color: black;
 }
 
+.fa-quora:hover {
+  color: #a62100;
+}
+
+.linktree a img{
+  width: 17px;
+}
+
 .box {
   position: relative;
 }
