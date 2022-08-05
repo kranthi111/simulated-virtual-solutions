@@ -138,9 +138,7 @@ h1 {
     width: calc(100% - 40px);
     margin-bottom: 40px;
   }
-}
 
-@media only screen and (max-width: 300px) {
   .box-wrap {
     grid-template-columns: 1fr;
   }
