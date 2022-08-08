@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <title>Simulated Virtual Solutions | Virtual model 1</title>
     <style>
         * {
@@ -18,11 +22,45 @@
             width: 100%;
             height: 100vh;
         }
+
+        .vr-model-box {
+            position: relative;
+        }
+
+        #our-logo-screen {
+            position: absolute;
+            z-index: 10;
+            left: 19%;
+            top: 24%;
+            background: #212040;
+            width: 820px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            #our-logo-screen {
+                left: 5%;
+                top: 41%;
+                width: calc(100% - 40px);
+            }
+        }
     </style>
 </head>
 
 <body>
-    <object class="vr-model" data="https://api2.enscape3d.com/v1/view/c3ad222b-26bc-404f-acaa-c63b36c1bea6"></object>
+
+    <div class="vr-model-box">
+        <img src="../images/main-logo-final-white.png" id="our-logo-screen" alt="apple">
+        <object class="vr-model"
+            data="https://api2.enscape3d.com/v1/view/c3ad222b-26bc-404f-acaa-c63b36c1bea6"></object>
+    </div>
 </body>
+<script>
+    setTimeout(() => {
+        const logo = document.getElementById('our-logo-screen');
+
+        logo.style.display = 'none';
+
+    }, 20000); 
+</script>
 
 </html>
