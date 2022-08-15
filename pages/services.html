@@ -129,6 +129,33 @@
                 <div class="swiper-slide">
                     <img src="../images/img-9.jpg" alt="img-9">
                 </div>
+                <div class="swiper-slide">
+                    <img src="../images/virtual-model-3.png" alt="img">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../images/virtual-model-4.png" alt="img">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../images/virtual-model-5.png" alt="img">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../images/virtual-model-6.png" alt="img">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../images/virtual-model-7.png" alt="img">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../images/virtual-model-8.png" alt="img">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../images/virtual-model-9.png" alt="img">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../images/virtual-model-10.png" alt="img">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../images/virtual-model-11.png" alt="img">
+                </div>
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
@@ -158,6 +185,13 @@
                     </div>
                     <div class="swiper-slide">
                         <iframe class="yt-video-align" src="https://www.youtube.com/embed/zOQbJk2yV3o"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="swiper-slide">
+                        <iframe class="yt-video-align" src="https://www.youtube.com/embed/ofq_8aDztE0"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen>
@@ -322,10 +356,11 @@
         // },
         pagination: {
             el: ".swiper-pagination",
-            clickable: true,
-            renderBullet: function (index, className) {
-                return '<span class="' + className + '">' + (index + 1) + "</span>";
-            },
+            // clickable: true,
+            // renderBullet: function (index, className) {
+            //     return '<span class="' + className + '">' + (index + 1) + "</span>";
+            // },
+            dynamicBullets: true,
         },
         navigation: {
             nextEl: ".swiper-button-next",
