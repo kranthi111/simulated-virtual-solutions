@@ -84,8 +84,15 @@
     display: block;
   }
 
-  .img-3 img {
-    height: 11rem;
+  .img-3 img,
+  .img-6 img {
+    width: calc(100% - 10px);
+    margin: 1.5rem auto;
+    display: block;
+  }
+
+  .our-clients {
+    margin-bottom: 10%;
   }
 
   /* video section */
