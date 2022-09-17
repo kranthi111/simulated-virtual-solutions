@@ -474,7 +474,7 @@ header {
 
 .our-clients {
   margin-top: 6%;
-  margin-bottom: 10%;
+  margin-bottom: 8%;
 }
 
 .block-1 {
@@ -482,15 +482,15 @@ header {
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
   align-items: center;
-  margin: 3% 0;
+  margin: 5% 0 3% 0;
 }
 
 .block-2 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
   align-items: center;
-  margin: 2% 12%;
+  margin: 3% 0;
 }
 
 .brand-clients-heading {
@@ -511,8 +511,13 @@ header {
   width: 120px;
 }
 
+.img-6 img {
+  height: 150px;
+  border-radius: 10%;
+}
+
 .img-3 img {
-  height: 120px;
+  height: 100px;
 }
 
 /* Works Section */
@@ -779,4 +784,3 @@ header {
 .fa-twitter:hover {
   color: #00acee;
 }
-
