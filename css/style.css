@@ -637,6 +637,10 @@ header {
   display: none;
 }
 
+.vrsec-footer{
+  margin-left: 5px;
+}
+
 .footer-line {
   display: flex;
   justify-content: center;
@@ -646,7 +650,7 @@ header {
 }
 
 .footer-line p {
-  font-size: 1.35em;
+  font-size: 1.15em;
 }
 
 .love-img img,
