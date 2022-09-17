@@ -7,6 +7,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+.grid-block-developers{
+  margin-top: 3rem;
+}
+
 .team-heading {
   position: relative;
   text-align: center;
