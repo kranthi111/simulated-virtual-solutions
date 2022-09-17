@@ -7,10 +7,15 @@
   font-family: "Poppins", sans-serif;
 }
 
+.pricing-index-container{
+  margin-bottom: 4rem;
+}
+
 .contianer {
   width: 100%;
   /* height: inherit; */
   background-color: #2f2f2f;
+  padding: 60px 0 50px 0;
 }
 
 .text-heading {
