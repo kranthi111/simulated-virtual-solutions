@@ -7,8 +7,9 @@
   font-family: "Poppins", sans-serif;
 }
 
-body {
+.about-us-container {
   background: #ffdfdc;
+  padding-bottom: 100px;
 }
 
 /* intro section */
