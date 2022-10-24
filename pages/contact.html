@@ -9,9 +9,9 @@
     <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png" />
+    <link rel="stylesheet" href="../css/contact.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/mobile.css">
-    <link rel="stylesheet" href="../css/contact.css">
     <title>Simulated Virtual Solutions | Contact Us</title>
 </head>
 
@@ -92,25 +92,56 @@
         </div>
     </div>
 
-
-    <h1>This is contact form</h1>
     <!-- contact form -->
-    <form action="https://formsubmit.co/7a4e11382a6ab17ecd62aca642c90885" method="POST">
-        <label for="name">Enter your name : </label>
-        <input type="text" name="name" required>
-        <br>
-        <br>
-        <input type="hidden" name="_template" value="table">
-        <label for="email">Enter your email : </label>
-        <input type="email" name="email" required>
-        <br>
-        <br>
-        <label for="message">Enter your message</label>
-        <textarea name="message" id="message" cols="30" rows="10" required></textarea>
-        <br>
-        <br>
-        <button type="submit">Send</button>
-    </form>
+    <div class="main-web">
+        <!-- <h1></h1> -->
+        <!-- <p>Any question or remarks? Just write us a message!</p> -->
+        <div class="box">
+            <div class="text">
+                <h2>Contact Us</h2>
+            </div>
+            <form action="https://formsubmit.co/7a4e11382a6ab17ecd62aca642c90885" method="post">
+                <input type="hidden" name="_template" value="table">
+                <div class="text-box">
+                    <div class="css23rt">
+                        <i class="fa-solid fa-user icon"></i>
+                        <input type="text" name="name" class="css23r2" placeholder="Enter Your Name" required>
+                    </div>
+                    <div class="css23rt">
+                        <i class="fa-solid fa-envelope icon"></i>
+                        <input type="text" name="email" class="css23r2" placeholder="Enter Your Email" required>
+                    </div>
+                </div>
+                <div class="text-box1">
+                    <div class="css32rt">
+                        <i class="fa-solid fa-message icon1"></i>
+                        <textarea name="message" cols="20" rows="4" class="css123"
+                            placeholder="Message Here..."></textarea>
+                    </div>
+                </div>
+                <div class="css12rt">
+                    <input type="submit" value="Send Message" class="css1rt">
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+    <!-- waves -->
+    <div>
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+            </g>
+        </svg>
+    </div>
 
 
     <!-- footer -->
@@ -214,5 +245,6 @@
 
 
 </body>
+<script src="../js/animatebg.js"></script>
 
 </html>
